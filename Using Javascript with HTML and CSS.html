@@ -1,0 +1,131 @@
+<html>
+<title>
+Javascript+CSS+HTML
+</title>
+<style>
+.p {
+background-color: #fff870;
+}
+.p2 {
+margin-left: 10;
+margin-bottom: 10;
+margin-top: 10;
+margin-right: 10;
+}
+.page2 a {
+color: black;
+text-decoration: none;
+}
+.page2 a:hover {
+color: lightblue;
+text-decoration: underline;
+background-color: black;
+}
+</style>
+<script>
+window.alert('Hello world! This is made using a Javascipt code.');
+</script>
+<body>
+<div id="main">
+<div class="p">
+<div class="p2">
+<h1 id="start">
+Hello World!
+</h1>
+<button onclick="openFunction()">
+Add text
+</button>
+<button onclick="closeFunction()">
+Remove text
+</button>
+<script>
+function openFunction() {
+document.getElementById("start").innerHTML = "Hello World! This is an added statement using the .innerHTML thingy...";
+}
+function closeFunction() {
+document.getElementById("start").innerHTML = "Hello World!"
+}
+</script>
+</div>
+</div>
+<div class="p">
+<div class="p2">
+<h1>
+<code>
+Let a = 15, b = 5, c = a + b, and d = a * b
+</code>
+<p id="demo1"></p>
+<script>
+let a, b, c;
+a = 15;
+b = 5;
+c = a + b;
+d = a * b;
+document.getElementById("demo1").innerHTML = "So, the value of c is " + c + " and the value of d is " + d + ". These instructions were written in Javascript. You can check this out in the 'inspect' option.";
+</script>
+</h1>
+</div>
+</div>
+<div class="p">
+<div class="p2" id="text">
+<script>
+document.getElementById("text").innerHTML = "This is a piece of text written using Javascript."
+</script>
+</div>
+</div>
+<div class="p">
+<div class="p2">
+<h1>
+Suppose <i>A</i> = 15 and <i>B</i> = 10. So,
+</h1>
+<p id="demo0"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+let text1 = "15";
+let text2 = "10";
+let result1 = text1 < text2;
+let result2 = text1 > text2;
+let result3 = text1 == text2;
+document.getElementById("demo0").innerHTML = "Is A less than B? " + result1 + "<hr>";
+document.getElementById("demo2").innerHTML = "Is A more than B? " + result2 + "<hr>";
+document.getElementById("demo3").innerHTML = "Is A equal to B? " + result3 + "<hr><hr><br>";
+</script>
+</div>
+</div>
+<div>
+<div>
+<button onclick="addFunction()">Click here to enter your name.</button>
+<p id="system_answer"></p>
+<br>
+<button onclick="removeFunction()">Click here to erase the data above.</button>
+<script>
+function addFunction() {
+let name = prompt("Please enter your name", "");
+if (name != null) {
+document.getElementById("system_answer").innerHTML = "<h1>Hello " + name + "! How are you today?<h1>";
+}
+}
+function removeFunction() {
+document.getElementById("system_answer").innerHTML = "";
+}
+</script>
+</div>
+</div>
+<hr>
+<hr>
+<hr>
+<button class="exitbtn" onclick="empty()">Empty this webpage.</button>
+</div>
+<div class="page2">
+<a href="file:///C:/Users/Admin/OneDrive/Desktop/Using%20Javascript%20with%20HTML%20and%20CSS%20p2.html">
+Page 2 -->
+</a>
+</div>
+<script>
+function empty() {
+document.getElementById("main").innerHTML = "Please reload the page to reset...";
+}
+</script>
+</body>
+</html>
