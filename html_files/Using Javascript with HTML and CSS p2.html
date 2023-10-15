@@ -1,0 +1,150 @@
+<html>
+<title>
+Javascript+CSS+HTML Page - 2
+</title>
+<style>
+.p {
+background-color: #fff870;
+}
+.p2 {
+margin-left: 10;
+margin-bottom: 10;
+margin-top: 10;
+margin-right: 10;
+}
+.dropbtn {
+background-color: #04AA6D;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.dropdown:hover .dropbtn {
+background-color: #3e8e41;
+}
+
+.dropbtn2 {
+background-color: #3498DB;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+.dropbtn2:hover, .dropbtn2:focus {
+background-color: #2980B9;
+}
+.dropdown2 {
+position: relative;
+display: inline-block;
+}
+.dropdown-content2 {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content2 a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+.dropdown2 a:hover {
+background-color: #ddd;
+}
+.show {
+display: block;
+}
+.topnav {
+width: 100%;
+background-color: dimgray;
+}
+.topnav font {
+color: white;
+font-family: calibri;
+padding: 10px;
+}
+.topnavcontent {
+margin-top: 10;
+margin-right: 10;
+margin-left: 10;
+margin-bottom: 10;
+postion: fixed;
+}
+</style>
+<body>
+<div class="topnav">
+<div class="topnavcontent">
+<font size="5">
+ffhfb
+</font>
+<div class="dropdown">
+<button class="dropbtn">Hoverable dropdown</button>
+<div class="dropdown-content">
+<a href="#">Link 1</a>
+<a href="#">Link 2</a>
+<a href="#">Link 3</a>
+<a>This is a hoverable dropdown</a>
+</div>
+</div>
+<div class="dropdown2">
+<button onclick="myFunction()" class="dropbtn2">Clickable dropdown</button>
+<div id="myDropdown" class="dropdown-content2">
+<a href="#">Link 1</a>
+<a href="#">Link 2</a>
+<a href="#">Link 3</a>
+<a>This is a clickable dropdown</a>
+</div>
+</div>
+<script>
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn2')) {
+var dropdowns = document.getElementsByClassName("dropdown-content2");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {
+openDropdown.classList.remove('show');
+}
+}
+}
+}
+</script>
+</div>
+</div>
+<div class="main">
+
+</div>
+</body>
+</html>

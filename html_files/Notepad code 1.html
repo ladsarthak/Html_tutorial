@@ -1,0 +1,144 @@
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>
+Revision of HTML
+</title>
+<style>
+body {
+background-color: #fff870;
+}
+.box1 {
+width: 105px;
+height: 100px;
+background-color: red;
+position: relative;
+animation-name: box;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-direction: alternate;
+}
+@keyframes box {
+0% {background-color: red; left: 0px; top: 0px;}
+25% {background-color: blue; left: 105px; top: 0px;}
+50% {background-color: green; left: 105px; top: 100px;}
+75% {background-color: olivegreen; left: 0px; top: 100px;}
+100% {background-color: red; left: 0px; top: 0px;}
+}
+.header {
+background-color: #f1f1f1;
+padding: 230px;
+text-align: center;
+font-size: 143.3px;
+}
+details {
+display: box;
+padding: 15px 15px;
+background-color: #f1f1f1;
+}
+summary {
+cursor: pointer;
+}
+</style>
+<body>
+<div class="header">
+Hello World!
+</div>
+<marquee>
+<h1>This is the header.<i class = "fa fa-arrow-up"></i> Please scroll down.</h1>
+</marquee>
+<h1>CSS Animations</h1>
+<div class="box1"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<code>
+This is a animated <b>div</b> element.
+</code>
+<hr>
+<button onclick="myFunction()">Click me to open</button>
+<button onclick="yourFunction()">Click me to close</button>
+<p id="demo">Hello!</p>
+<script>
+function myFunction() {
+document.getElementById("demo").innerHTML = "Hello World!";
+}
+function yourFunction() {
+document.getElementById("demo").innerHTML = "Hello!";
+}
+</script>
+<h2>Input Button</h2>
+<input type="button" onclick="alert('Hello World! This is a system message. It might stop the animation on the left.')" value="Click Me!">
+<hr>
+<form action="file:///C:/Users/Admin/OneDrive/Desktop/action%20page%202.html">
+<label for="favcolor">Select your favorite color:</label>
+<input type="color" id="favcolor" name="favcolor" value="#f000001">
+<input type="submit" value="Submit">
+</form>
+<hr>
+<form action="file:///C:/Users/Admin/OneDrive/Desktop/action%20page.html">
+<label for="birthday">Date of Birth:</label>
+<input type="date" id="birthday" name="birthday">
+<input type="submit" value="Submit">
+</form>
+<hr>
+<h1>
+<code>
+Fill in your personal details (optional).
+</code>
+</h1>
+<details>
+<summary>
+Click here to start...
+</summary>
+<hr>
+<form action="file:///C:/Users/Admin/OneDrive/Desktop/action%20page%203.html">
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname">
+<br>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname">
+<hr>
+<label for="quantity">Lucky number:</label>
+<input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+<br>
+<label for="favcolor">Favorite color:</label>
+<input type="color" id="favcolor" name="favcolor" value="#f000001">
+<hr>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+<br>
+<label for="pwd">Password:</label>
+<input type="password" id="pwd" name="pwd">
+<hr>
+<label for="gender">Gender:</label>
+<select name="gender" id="gender">
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+<br>
+<label for="birthday">Date of birth:</label>
+<input type="date" id="birthday" name="birthday">
+<hr>
+<label>Do you like HTML?</label><br>
+<input type="radio" id="yes" name="fav_language" value="Yes, I do">
+<label for="yes">Yes, I do</label><br>
+<input type="radio" id="no" name="fav_language" value="No, I don't">
+<label for="css">No, I don't</label>
+<hr>
+<hr>
+<input type="checkbox" id="confirmation" name="confirmation" value="Yes">
+<label for="confirmation"> Yes, I have filled all the information</label>
+<br>
+<br>
+<input type="reset" value="Reset">
+<input type="submit" value="Submit">
+</form>
+</details>
+<br>
+<button onclick="alert ('HTML is amazing!')">Display Msg</button>
+</body>
+</html>
